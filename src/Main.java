@@ -1,0 +1,18 @@
+/*Nathan loves cycling.
+
+Because Nathan knows it is important to stay hydrated,
+he drinks 0.5 litres of water per hour of cycling.
+
+You get given the time in hours and you need to return the
+number of litres Nathan will drink, rounded to the smallest value.*/
+
+public class Main {
+    public static void main(String[] args) {
+        Communicator communicator =  new Communicator();
+        Calculator calculator = new Calculator();
+        double time = communicator.getTime("Enter time: ");
+        int litres = calculator.getLitres(time);
+        communicator.resultOut("Result is: ", litres);
+        communicator.close();
+    }
+}
